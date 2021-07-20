@@ -1,6 +1,6 @@
 import cv2
 
-face_classifier=cv2.CascadeClassifier("cars.xml")
+car_classifier=cv2.CascadeClassifier("cars.xml")
 video=cv2.VideoCapture(1)
 
 while True:
