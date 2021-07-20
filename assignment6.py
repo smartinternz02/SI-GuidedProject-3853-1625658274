@@ -14,7 +14,7 @@ while True:
     
     for(x,y,w,h) in car:
         cv2.rectangle(frame, (x,y), (x+w,y+h), (127,0,255), 2)
-        cv2.imshow('Face detection', frame)
+        cv2.imshow('car detection', frame)
         picname=datetime.datetime.now().strftime("%y-%m-%d-%H-%M")
         cv2.imwrite(picname+".jpg",frame)
     Key=cv2.waitKey(1)
